@@ -1,6 +1,7 @@
 package com.mangcoding.product;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 import com.mangcoding.category.Category;
 import com.mangcoding.store.Store;
@@ -19,7 +20,7 @@ public class Product extends PanacheEntity {
     public BigDecimal price;
 
     @ManyToMany
-    public Store store;
+    public List<Store> store;
 
     @ManyToOne
     public Category category;
