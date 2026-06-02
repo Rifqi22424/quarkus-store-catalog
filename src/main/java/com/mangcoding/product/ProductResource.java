@@ -21,7 +21,7 @@ public class ProductResource {
     
     @GET
     public List<Product> getAll() {
-        return Store.listAll();
+        return Product.listAll();
     }
 
     @GET 
